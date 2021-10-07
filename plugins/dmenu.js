@@ -15,9 +15,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     let me = conn.user.name
     let pp = await conn.getProfilePicture(conn.user.jid)
     /// sosial media\\
-    let gith = 'https://github.com/Rizxyu'
+    let gith = 'https://github.com/Laksmana27'
 let fbe = 'https://www.facebook.com/profile.php?id=100064516381260'
-let Txh = `━━┅⑈𝒯𝒽𝒶𝓃𝓀𝓈 ℱℴ𝓇⑈┅━━\n⊙Nurutomo,\n⊙Arrifb,\n⊙Bochil Gaming,\n⊙Rendy Ganz,\n⊙Rizky,\n⊙ Fauzan\n⊙Farhan\n⊙Denta\n⊙Penyedia apikey\n⊙ All creator Bot\n┅━━⊙━━┅`
+let Txh = `━━┅⑈𝒯𝒽𝒶𝓃𝓀𝓈 ℱℴ𝓇⑈┅━━\n⊙Nurutomo,\n⊙Arrifb,\n⊙Bochil Gaming,\n⊙Rendy Ganz,\n⊙Rizky,\n⊙ Fauzan\n⊙Farhan\n⊙RLP27\n⊙Penyedia apikey\n⊙ All creator Bot\n┅━━⊙━━┅`
 //
 let tags = {
   'main': 'Main',
