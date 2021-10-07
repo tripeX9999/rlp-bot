@@ -30,7 +30,6 @@ node .
 git clone https://github.com/Laksmana27/rlp-bot --branch termux
 cd rlp-bot
 npm i
-npm update
 node .
 ```
 
