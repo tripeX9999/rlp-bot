@@ -17,12 +17,15 @@
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/BochilGaming/games-wabot
-> cd games-wabot
+> git clone https://github.com/Laksmana27/rlp-bot
+> cd rlp-bot
 > npm install
 ```
 ###### Run
 ```bash
+
+> npm start 
+
 > node . [<session name>] (session name is optional)
 ```
 
