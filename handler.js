@@ -1,6 +1,6 @@
 //Males Bang
 //Udah susah susah nambahin fitur eh malah eror
-//BY RIZXYU
+//BY RLP27
 
 let fetch = require('node-fetch')
 let util = require('util')
