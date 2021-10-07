@@ -36,7 +36,7 @@ ${usedPrefix}upgrade <type> [ FITUR TIDAK TERSEDIA ]
 
 
 _🎮Created By:_
-_@Rifaden_
+_@Laksmana27_
 `
 //
         try {
