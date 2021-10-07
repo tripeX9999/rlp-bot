@@ -1,14 +1,28 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, text }) => {
-
-let res = await fetch(`https://api-zeeoneofc.herokuapp.com/api/muslim/doaharian?apikey=Alphabot`)
-json = await res.json()
-
-if (!json.result) throw 'eror keknya!'
-m.reply(`*Doa:* ${json.result.data.title}\n\n*Bacaan:* ${json.result.data.arabic}\n\n*Indonesia:* ${json.result.data.latin}`)
-
+let handler = async (m, { conn }) => {
+  await m.reply(global.wait)
+  let res = await fetch(global.API('xteam','/religi/doaharian', {}, 'APIKEY'))
+  let json = await res.json()
+  if (res.status != 200) throw json
+  if (json.result.error) throw json.result.message
+  let {
+    title,
+    latin,
+    arabic,
+    translation
+  } = json.result
+  let caption = `
+*「 Doa Harian 」*
+${title}
+${arabic}
+${latin}
+Artinya:
+_"${translation}"_
+`.trim()
+  await m.reply(caption)
+}
 handler.help = ['doaharian']
 handler.tags = ['quran']
-handler.command = /^(doaharian|doaharian)$/i
+handler.command = /^(doaharian)$/i
 
 module.exports = handler
