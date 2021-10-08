@@ -2,11 +2,11 @@ let handler = async function (m, { text, conn}) {
 
 let tks = `
 _*>>[ 🇮🇩 SCRIPT BOT WHATSAPP 🇮🇩 ]<<*_
-_🎋Sc Bot↓_
-www.github.com/Rizxyu/Bot-Rain
+_🎊Sc Bot↓_
+www.github.com/Laksmana27/rlp-bot
 
 🏮Follow me On Github:
-github.com/Rizxyu
+github.com/Laksmana27
 
 _🎃This SC is under development_
 `
