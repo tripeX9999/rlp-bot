@@ -5,7 +5,7 @@ let handler = async(m, { conn, text }) => {
  axios.get(`https://leyscoders-api.herokuapp.com/api/katailham?apikey=MIMINGANZ`).then((res) => {
    let hasil = `${res.data.result}`
 
-    conn.reply(m.chat, hasil, m)
+    await conn.sendButton(m.chat, hasil, author, 'Kata Ilham', `${usedPrefix}katailham`, m)
 	})
 }
 handler.help = ['kata'].map(v => v + 'ilham')
