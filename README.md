@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://i.ibb.co/7Vvn7YQ/IMG-20211007-WA0020.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://i.ibb.co/c6RzM7g/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f38333648694a633770677a7938694e58436e2f67.gif" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">RLP-BOT</h1>
  -Khusus WhatsApp biasa yak <br>
