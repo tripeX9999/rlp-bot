@@ -5,7 +5,7 @@ global.mods = ['62895372305081', '6285783417029'] // moderator
 global.prems = ['62895372305081', '6285747223233']  //premium
 global.wait = 'Await'
 
-global.botwm = '·Laksmana.27·'//UBAH JADI NAMAMU
+global.botwm = 'Â·Laksmana.27Â·'//UBAH JADI NAMAMU
 
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -24,10 +24,10 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'c2c200ae76c1c557',//BELI SENDIRI/BUAT AKUN
+  'https://api.xteam.xyz': '3b710272e0090cdb',//BELI SENDIRI/BUAT AKUN
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://bsbt-api-rest.herokuapp.com': 'benniismael',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://leyscoders-api.herokuapp.com': 'MIMINGANZ' 
