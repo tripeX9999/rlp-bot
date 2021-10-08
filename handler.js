@@ -1,13 +1,10 @@
 //Males Bang
 //Udah susah susah nambahin fitur eh malah eror
-//BY RLP27
 
-let fetch = require('node-fetch')
 let util = require('util')
 let simple = require('./lib/simple')
 let { MessageType } = require('@adiwajshing/baileys')
 let { buttonsMessage, contactsArray, image, MimeType } = MessageType
-const uploadImage = require('./lib/uploadImage')
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
@@ -37,13 +34,10 @@ module.exports = {
             if (!isNumber(user.stamina)) user.stamina = 0
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.exp)) user.exp = 0
-            if (!isNumber(user.pc)) user.pc = 0
             if (!isNumber(user.limit)) user.limit = 10
             if (!isNumber(user.lastclaim)) user.lastclaim = 0
             if (!isNumber(user.money)) user.money = 0
             
-            if (!isNumber(user.trofi)) user.trofi= 0
-            if (!user.rtrofi) user.rtrofi = 'Perunggu'
             if (!isNumber(user.rumahsakit)) user.rumahsakit= 0
             if (!isNumber(user.fortress)) user.fortress = 0
             if (!isNumber(user.troopcamp)) user.troopcamp = 0
@@ -108,21 +102,21 @@ module.exports = {
             if (!isNumber(user.bawal)) user.bawal = 0
             if (!isNumber(user.lele)) user.lele = 0
             if (!isNumber(user.paus)) user.paus = 0
-            if (!isNumber(user.kepiting)) user.kepiting = 0
-            if (!isNumber(user.gurita)) user.gurita = 0
-            if (!isNumber(user.cumi)) user.cumi= 0
-            if (!isNumber(user.buntal)) user.buntal = 0
-            if (!isNumber(user.dory)) user.dory = 0
-            if (!isNumber(user.lumba)) user.lumba = 0
-            if (!isNumber(user.lobster)) user.lobster = 0
-            if (!isNumber(user.hiu)) user.hiu = 0
-           if (!isNumber(user.udang)) user.udang = 0
-            if (!isNumber(user.ikan)) user.ikan = 0
-            if (!isNumber(user.orca)) user.orca = 0
+     if (!isNumber(user.kepiting)) user.kepiting = 0
+     if (!isNumber(user.gurita)) user.gurita = 0
+     if (!isNumber(user.cumi)) user.cumi= 0
+     if (!isNumber(user.buntal)) user.buntal = 0
+     if (!isNumber(user.dory)) user.dory = 0
+     if (!isNumber(user.lumba)) user.lumba = 0
+     if (!isNumber(user.lobster)) user.lobster = 0
+     if (!isNumber(user.hiu)) user.hiu = 0
+     if (!isNumber(user.udang)) user.udang = 0
+     if (!isNumber(user.ikan)) user.ikan = 0
+     if (!isNumber(user.orca)) user.orca = 0
         
-            if (!isNumber(user.banteng)) user.banteng = 0
-            if (!isNumber(user.harimau)) user.harimau = 0
-            if (!isNumber(user.gajah)) user.gajah = 0
+        if (!isNumber(user.banteng)) user.banteng = 0
+     if (!isNumber(user.harimau)) user.harimau = 0
+     if (!isNumber(user.gajah)) user.gajah = 0
      if (!isNumber(user.kambing)) user.kambing = 0
      if (!isNumber(user.panda)) user.panda = 0
      if (!isNumber(user.buaya)) user.buaya = 0
@@ -132,10 +126,6 @@ module.exports = {
      if (!isNumber(user.babihutan)) user.babihutan = 0
      if (!isNumber(user.babi)) user.babi = 0
      if (!isNumber(user.ayam)) user.ayam = 0
-     if (!isNumber(user.rusa)) user.rusa = 0
-     if (!isNumber(user.keledai)) user.keledai = 0
-     if (!isNumber(user.beruang)) user.beruang = 0
-     if (!isNumber(user.unta)) user.unta = 0
      //
       if (!isNumber(user.lastberbru)) user.lastberbru = 0
             if (!isNumber(user.anakkucing)) user.anakkucing = 0
@@ -148,14 +138,13 @@ module.exports = {
             if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
 
             if (!isNumber(user.kayu)) user.kayu = 0
-            if (!isNumber(user.string)) user.string = 0
             if (!isNumber(user.batu)) user.batu = 0
             if (!isNumber(user.besi)) user.besi = 0
             if (!isNumber(user.emas)) user.emas = 0
             if (!isNumber(user.makanan)) user.makanan = 0
             
             if (!isNumber(user.sword)) user.sword = 0
-            if (!isNumber(user.sworddurability)) user.sworddurability = 100
+            if (!isNumber(user.sworddurability)) user.sworddurability = 0
             if (!isNumber(user.pickaxe)) user.pickaxe = 0
             if (!isNumber(user.pickaxedurability)) user.pickaxedurability = 0
             if (!isNumber(user.fishingrod)) user.fishingrod = 0
@@ -175,8 +164,6 @@ module.exports = {
             if (!isNumber(user.lasthunt)) user.lasthunt = 0
             if (!isNumber(user.lastweekly)) user.lastweekly = 0
             if (!isNumber(user.lastmonthly)) user.lastmontly = 0
-            if (!isNumber(user.lastbansos)) user.lastbansos = 0
-            if (!isNumber(user.lastrampok)) user.lastrampok = 0
             /////if (!('kingdom' in user)) user.kingdom = false
             if (!('registered' in user)) user.registered = false
             if (!user.registered) {
@@ -185,15 +172,12 @@ module.exports = {
                 if (!isNumber(user.regTime)) user.regTime = -1
                 if (!user.role) user.role = 'Beginner'
             }
-            if (!('autolevelup' in user)) user.autolevelup = false
-          } else global.DATABASE._data.users[m.sender] = {
+            if (!('autolevelup' in user)) user.autolevelup = true
+        } else global.DATABASE._data.users[m.sender] = {
             healt: 100,
             stamina: 100,
             level: 0,
-            pc: 0,
             //
-            trofi: 0,
-            rtrofi: 'perunggu',
             rumahsakit: 0,
             troopcamp: 0,
             fortress: 0,
@@ -243,38 +227,38 @@ module.exports = {
           nila: 0,
           bawal: 0,
           paus: 0,
-          kepiting: 0,
-           gurita: 0,
-          cumi: 0,
-          buntal: 0,
-          dory: 0,
-          lumba: 0,
-          lobster: 0,
-          hiu: 0,
-          udang: 0,
-          ikan: 0,
-          orca: 0,
-          banteng: 0,
-          harimau: 0,
-          gajah: 0,
-          kambing: 0,
-          panda: 0,
-          buaya: 0,
-          kerbau : 0,
-          sapi: 0,
-          monyet : 0,
-          babihutan: 0,
-          babi: 0,
-          ayam: 0,
+    kepiting: 0,
+    gurita: 0,
+    cumi: 0,
+    buntal: 0,
+    dory: 0,
+    lumba: 0,
+    lobster: 0,
+    hiu: 0,
+    udang: 0,
+    ikan: 0,
+    orca: 0,
+    banteng: 0,
+    harimau: 0,
+    gajah: 0,
+    kambing: 0,
+    panda: 0,
+    buaya: 0,
+    kerbau : 0,
+    sapi: 0,
+    monyet : 0,
+    babihutan: 0,
+    babi: 0,
+    ayam: 0,
     
-          apel: 20,
-          ayamb: 0,
-          ayamg: 0,
-          ssapi: 0,
-          sapir: 0,
-          leleb: 0,
-          leleg: 0,
-          esteh: 0,
+    apel: 0,
+    ayamb: 0,
+    ayamg: 0,
+    ssapi: 0,
+    sapir: 0,
+    leleb: 0,
+    leleg: 0,
+    esteh: 0,
     
             anakkucing: 0,
             anakkuda: 0,
@@ -284,7 +268,6 @@ module.exports = {
             antispam: 0,
             antispamlastclaim: 0,
             //SDA
-            string: 0,
             kayu: 0,
             batu: 0,
             besi: 0,
@@ -308,14 +291,12 @@ module.exports = {
             lastjb: 0,
             lastweekly: 0,
             lastmonthly: 0,
-            lastbansos: 0,
-            lastrampok: 0,
             registered: false,
             name: this.getName(m.sender),
             age: -1,
             regTime: -1,
             role: 'Beginner',
-            autolevelup: false,
+            autolevelup: true,
         }
 
         let chat = global.DATABASE._data.chats[m.chat]
@@ -323,14 +304,13 @@ module.exports = {
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
           if (!('welcome' in chat)) chat.welcome = false
-          if (!('detect' in chat)) chat.detect = true
+          if (!('detect' in chat)) chat.detect = false
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
           if (!('sDemote' in chat)) chat.sDemote = ''
-         // if (!isNumber(chat.expired)) chat.expired = 0
-          if (!('delete' in chat)) chat.delete = true
-          if (!('antiLink' in chat)) chat.antiLink = true
+          if (!('delete' in chat)) chat.delete = false
+          if (!('antiLink' in chat)) chat.antiLink = false
           if (!'antiToxic' in chat) chat.antiToxic = false
           if (!'antiJawa' in chat) chat.antiJawa = false
         } else global.DATABASE._data.chats[m.chat] = {
@@ -341,7 +321,6 @@ module.exports = {
           sBye: '',
           sPromote: '',
           sDemote: '',
-         // expired: 0,
           delete: false,
           antiLink: false,
           antiToxic: false,
@@ -594,15 +573,13 @@ module.exports = {
         if (chat.welcome) {
           let groupMetadata = await this.groupMetadata(jid)
           for (let user of participants) {
-            let pp = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
-            let ppgc = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
-              try {
+            let pp = 'https://i.ibb.co/fHDx30X/20210725-125918.jpg'
+            try {
               pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
-              ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
             } catch (e) {
             } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                   (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
+                (chat.sBye || this.bye || conn.bye || 'Sampai jumpa, @user!')).replace('@user', '@' + user.split`@`[0])
               let wel = `https://hardianto-chan.herokuapp.com/api/tools/welcomer2?name=${encodeURIComponent(this.getName(user))}&descriminator=${user.split(`@`)[0].substr(-5)}&totalmem=${encodeURIComponent(groupMetadata.participants.length)}&namegb=${encodeURIComponent(this.getName(jid))}&ppuser=${pp}&background=https://i.ibb.co/KhtRxwZ/dark.png&apikey=hardianto`
               let lea = `https://hardianto-chan.herokuapp.com/api/tools/leave2?name=${encodeURIComponent(this.getName(user))}&descriminator=${user.split(`@`)[0].substr(-5)}&totalmem=${encodeURIComponent(groupMetadata.participants.length)}&namegb=${encodeURIComponent(this.getName(jid))}&ppuser=${pp}&background=https://i.ibb.co/KhtRxwZ/dark.png&apikey=hardianto`
 
@@ -632,7 +609,7 @@ module.exports = {
     if (m.key.fromMe) return
     let chat = global.DATABASE._data.chats[m.key.remoteJid]
     if (chat.delete) return
-    await this.sendButton(m.key.remoteJid, `
+    await this.send2Button(m.key.remoteJid, `
 Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
 
 Untuk mematikan anti delete 
@@ -658,7 +635,7 @@ Klik tombol dibawah↓
                     return
                 break
         }
-        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka bot akan memblokirmu\nUnblock chat owner\nwa.me/62896372305081', MessageType.extendedText)
+        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka bot akan memblokirmu\nUnblock chat owner\nwa.me/6282328303332', MessageType.extendedText)
         await this.blockUser(from, 'add')
     }
 }
@@ -673,7 +650,7 @@ global.dfail = (type, m, conn) => {
     private: '*[❗] Private Only*',
     admin: '*[❗] Admin Group Only*',
     botAdmin: '*[❗] Bot Admin Only*',
-    unreg: '── 「 NOT REGISTERED 」 ──\nSilakan Register Terlebih Dahulu Sebelum Menggunakan Bot. Cara Register Cukup Dengan Command *#daftar nama|umur*\n\nNote:\nHarap Save Serial Number Mu Agar Bisa Melakukan Unreg Database Bot'
+    unreg: '── 「 NOT REGISTERED 」 ──\nSilakan Register Terlebih Dahulu Sebelum Menggunakan Bot. Cara Register Cukup Dengan Command *#verify*\n\nNote:\nHarap Save Serial Number Mu Agar Bisa Melakukan Unreg Database Bot'
   }[type]
   if (msg) return m.reply(msg)
 }
