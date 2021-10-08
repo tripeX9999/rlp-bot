@@ -22,16 +22,16 @@
     "Games-wabot",
     "wabot-aq"
   ],
-  "homepage": "https://github.com/Rizxyu/Bot-Rain",
+  "homepage": "https://github.com/Laksmana27/rlp-bot",
   "author": {
-    "name": "Laksmana.27"
+    "name": "Laksmana27"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nurutomo/wabot-aq.git"
   },
   "bugs": {
-    "url": "https://github.com/Rizxyu/Bot-Rain/issues"
+    "url": "https://github.com/Laksmana27/rlp-bot/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
