@@ -27,7 +27,7 @@ node .
 
 ## UNTUK PENGGUNA TERMUX
 ```bash
-git clone https://github.com/Laksmana27/rlp-bot --branch termux
+git clone https://github.com/Laksmana27/rlp-bot
 cd rlp-bot
 npm i
 node .
