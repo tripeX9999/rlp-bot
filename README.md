@@ -2,6 +2,8 @@
 	<img src="https://i.ibb.co/7Vvn7YQ/IMG-20211007-WA0020.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">RLP-BOT</h1>
+ -Khusus WhatsApp biasa yak <br>
+ -bukan untuk WhatsApp Busines
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Laksmana27/rlp-bot)
