@@ -1,6 +1,6 @@
-//by nobuyaki
+//by laksmana27
 //jangan hapus hargai yang bikin
-//remake by dhamz
+//remake by rlp:v
 
 const uploadImage = require('../lib/uploadImage') 
 const { sticker } = require('../lib/sticker')
@@ -15,7 +15,7 @@ let handler = async (m, { conn, text }) => {
   let img = await q.download()
   let url = await uploadImage(img)
   let wasted = `https://some-random-api.ml/canvas/wasted?avatar=${url}`
-  let stiker = await sticker(null, wasted, 'Wasted', '©Nobuyaki')
+  let stiker = await sticker(null, wasted, 'Wasted', '©Laksmana27')
   conn.sendMessage(m.chat, stiker, MessageType.sticker, {
     quoted: m
   })
