@@ -172,7 +172,7 @@ Last Monthly: ${lastmonthly > 0 ? '❌' + new Date(lastmonthly) : '✅'}
 ⚠️Warn: *${warn}*
 ❎Banned: *No*
 `.trim()
-    conn.sendButton(m.chat, str, `Bot By Rizxyu`, `Kembali`, `.menu`, m)
+    conn.sendButton(m.chat, str, `Bot By Laksmana27`, `Kembali`, `.menu`, m)
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
