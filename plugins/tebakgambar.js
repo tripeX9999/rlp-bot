@@ -8,10 +8,10 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakgambar[id][0])
     throw false
   }
-  let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakgambar.json')).json()
-  let json = src[Math.floor(Math.random() * src.length)]
-  let caption = `
-  ${json.deskripsi}
+ let res = await fetch(global.API('bg', '/tebakgambar'))
+    let json = await res.json()
+    if (json.status !== true) throw json
+    let caption = `
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hint untuk bantuan
 Bonus: ${poin} XP
