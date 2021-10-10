@@ -12,7 +12,7 @@ handler.before = m => {
         let str = `Selamat @${m.sender.split`@`[0]} Anda Naik 🧬level 
 *${before}* --> *${user.level}*
 `.trim()
-        conn.sendButton(m.chat, str, `RainBot`, `Profil`, `.inv`, m, false, {
+        conn.sendButton(m.chat, str, `Laksmana27`, `Profil`, `.inv`, m, false, {
     contextInfo: {
       mentionedJid: conn.parseMention(str)
     }
