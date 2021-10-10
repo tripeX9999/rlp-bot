@@ -172,7 +172,7 @@ module.exports = {
                 if (!isNumber(user.regTime)) user.regTime = -1
                 if (!user.role) user.role = 'Beginner'
             }
-            if (!('autolevelup' in user)) user.autolevelup = true
+            if (!('autolevelup' in user)) user.autolevelup = false
         } else global.DATABASE._data.users[m.sender] = {
             healt: 100,
             stamina: 100,
@@ -304,7 +304,7 @@ module.exports = {
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
           if (!('welcome' in chat)) chat.welcome = false
-          if (!('detect' in chat)) chat.detect = false
+          if (!('detect' in chat)) chat.detect = true
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
@@ -316,7 +316,7 @@ module.exports = {
         } else global.DATABASE._data.chats[m.chat] = {
           isBanned: false,
           welcome: false,
-          detect: false,
+          detect: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
@@ -562,6 +562,7 @@ module.exports = {
       } catch (e) {
         console.log(m, m.quoted, e)
       }
+      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
     }
   },
   async participantsUpdate({ jid, participants, action }) {
@@ -615,9 +616,9 @@ Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
 Untuk mematikan anti delete 
 Klik tombol dibawah↓
 `,`©Grup setting`, 'Enable', 
-'.enable antidelete', 
+'.disable antidelete', 
  'Disable', 
- '.disable antidelete', m.message, {
+ '.enable antidelete', m.message, {
       contextInfo: {
         mentionedJid: [m.participant]
       }
@@ -635,7 +636,7 @@ Klik tombol dibawah↓
                     return
                 break
         }
-        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka bot akan memblokirmu\nUnblock chat owner\nwa.me/6282328303332', MessageType.extendedText)
+        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka saya akan memblokirmu\nUnblock chat owner\nwa.me/62895372305081', MessageType.extendedText)
         await this.blockUser(from, 'add')
     }
 }
@@ -664,3 +665,6 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   if (global.reloadHandler) console.log(global.reloadHandler())
 })
+
+
+
