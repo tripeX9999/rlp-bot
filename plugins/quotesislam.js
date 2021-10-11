@@ -7,7 +7,8 @@ json = await res.json()
 
 if (!json.result) throw 'EROR NGAB!'
 
-await this.send2Button(m.chat, `${json.result.text_id}` ,author, 'Quotes Islamic', `${usedPrefix}quotesislam',`Doa Sakit Hati', `Doa sakit hati`, m)
+await this.send2Button(m.chat, `${json.result.text_id}` ,author, 'Quotes Islamic', `${usedPrefix}quotesislam','Lu Sedih?', `${usedPrefix}dakwah2' m)
+}
 }
 handler.help = ['Quotesislami']
 handler.tags = ['quran']
