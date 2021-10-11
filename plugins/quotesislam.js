@@ -9,7 +9,7 @@ if (!json.result) throw 'EROR NGAB!'
 
 await conn.sendButton(m.chat, `${json.result.text_id}` ,caption, 'Laksmana27', 'Quotes Islamic', `.quotesislam`, m),
 
-}
+
 handler.help = ['Quotesislami']
 handler.tags = ['quran']
 handler.command = /^(quotesislami|quotesislam)$/i
