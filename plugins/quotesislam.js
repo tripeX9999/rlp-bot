@@ -7,7 +7,7 @@ json = await res.json()
 
 if (!json.result) throw 'EROR NGAB!'
 
-conn.reply(m.chat, `${json.result.text_id}`Author, m)
+conn.reply(m.chat, `${json.result.text_id}\nauthor`, m)
 
 }
 handler.help = ['Quotesislami']
