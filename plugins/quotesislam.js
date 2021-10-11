@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text, usedPrefix }) => {
 
 let res = await fetch(`https://api-zeeoneofc.herokuapp.com/api/randomquote/muslim?apikey=Alphabot`)
 json = await res.json()
@@ -7,7 +7,7 @@ json = await res.json()
 
 if (!json.result) throw 'EROR NGAB!'
 
-conn.reply(m.chat, `${json.result.text_id}\nauthor`, m)
+await conn.sendButton(m.chat, `${json.result.text_id}` ,caption, 'Laksmana27', 'Quotes Islamic', `.quotesislam`, m),
 
 }
 handler.help = ['Quotesislami']
