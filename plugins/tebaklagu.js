@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 
 let timeout = 120000
-let poin = 500
+let poin = 1000
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {}
     let id = m.chat
@@ -11,10 +11,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
     // ubah isi 'id' kalo mau ganti playlist spotifynya
     let res = await fetch(global.API('xteam', '/game/tebaklagu/', { id: '3AaKHE9ZMMEdyRadsg8rcy' }, 'APIKEY'))
-    if (!res.ok) throw await `${res.status} ${res.statusText}`
+    if (res.status !== 200) throw await res.text()
     let result = await res.json()
+    console.log(result)
     let json = result.result
-    if (!result.status) throw json
+    // if (!json.status) throw json
     let caption = `
 TEBAK JUDUL LAGU
 Timeout *${(timeout / 1000).toFixed(2)} detik*
@@ -24,15 +25,15 @@ Bonus: ${poin} XP
     conn.tebaklagu[id] = [
         await m.reply(caption),
         json, poin,
-        setTimeout(async () => {
-            if (conn.tebaklagu[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.judul}*`, '© laksmana27', 'Tebak Lirik', `.tebaklirik`, conn.tebaklagu[id][0])
+        setTimeout(() => {
+            if (conn.tebaklagu[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.judul}*`, conn.tebaklagu[id][0])
             delete conn.tebaklagu[id]
         }, timeout)
     ]
-    await conn.sendFile(m.chat, json.preview, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
+    await conn.sendFile(m.chat, json.preview, 'coba-lagi.mp3', '', m)
 }
 handler.help = ['tebaklagu']
 handler.tags = ['game']
 handler.command = /^tebaklagu$/i
-
+handler.limit = true
 module.exports = handler
