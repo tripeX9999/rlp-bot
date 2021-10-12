@@ -1,5 +1,5 @@
 {
-  "name": "BOT-WA",
+  "name": "RLP-BOT",
   "version": "0.9.8",
   "description": "Customizable WhatsApp Bot",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "whatsapp",
     "js-whatsapp",
     "whatsapp",
-    "Games-wabot",
+    "rlp-bot",
     "wabot-aq"
   ],
   "homepage": "https://github.com/Laksmana27/rlp-bot",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/Laksmana27/rlp-bot.git"
   },
   "bugs": {
     "url": "https://github.com/Laksmana27/rlp-bot/issues"
@@ -82,3 +82,4 @@
     ]
   }
 }
+
