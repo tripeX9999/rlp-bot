@@ -1,5 +1,5 @@
-let fetch = require('node-fetch')
 let handler = async (m, { conn, usedPrefix }) => {
+  let fetch = require('node-fetch')
 
 let res = await fetch(`https://api-zeeoneofc.herokuapp.com/api/randomquote/muslim?apikey=Alphabot`)
 json = await res.json()
