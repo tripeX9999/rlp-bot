@@ -15,9 +15,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     let me = conn.user.name
     let pp = await conn.getProfilePicture(conn.user.jid)
     /// sosial media\\
-    let gith = 'https://github.com/Rizxyu'
+    let gith = 'https://github.com/Laksmana27'
 let fbe = 'https://www.facebook.com/profile.php?id=100064516381260'
-let Txh = `━━┅⑈𝒯𝒽𝒶𝓃𝓀𝓈 ℱℴ𝓇⑈┅━━\n⊙Nurutomo,\n⊙Arrifb,\n⊙Bochil Gaming,\n⊙Rendy Ganz,\n⊙Rizky,\n⊙ Fauzan\n⊙Farhan\n⊙Denta\n⊙Penyedia apikey\n⊙ All creator Bot\n┅━━⊙━━┅`
+let Txh = `━━┅⑈𝒯𝒽𝒶𝓃𝓀𝓈 ℱℴ𝓇⑈┅━━\n⊙Nurutomo,\n⊙Arrifb,\n⊙۩๖ۣۜℜLƤ27,\n⊙Laksmana27\n⊙Penyedia apikey\n⊙ All creator Bot\n┅━━⊙━━┅`
 //
 let tags = {
   'main': 'Main',
@@ -110,7 +110,7 @@ let totalprem = Object.keys(global.prems).length
 
 const tombol = [
 {buttonId: '/menu', buttonText: {displayText: 'Menu'}, type: 1},
-{buttonId: '/donasi', buttonText: {displayText: 'Donasi'}, type: 1}
+{buttonId: '/config', buttonText: {displayText: 'Config Inter..'}, type: 1}
 ]
 //******************************\\
         
@@ -121,7 +121,7 @@ Im ${me}
 _*📌My Sosmed*_
 *📎 Facebook:* ${fbe}
 *📎Github:* ${gith}
-*📎Youtube:* https://youtube.com/c/Rizxyu🅥
+*📎Youtube:* https://youtube.com/c/RLP27🅥
 
 _*⛩️LIST FEATURE⛩️*_
 🔖 .dare
@@ -139,7 +139,7 @@ _*⛩️LIST FEATURE⛩️*_
 _Jika kamu menemukan Bug Silahkan lapor ke owner_`
 
 ///conn.sendMessage(m.chat, buttons, MessageType.buttonsMessage, { quoted: m })
-conn.send2ButtonImg( m.chat, tes, avtar, `©Rizxyu`, `Kembali`, '/menu', `Partner`, '/creator', {
+conn.send2ButtonImg( m.chat, tes, avtar, `©۩๖ۣۜℜLƤ27`, `Kembali`, '/menu', `Partner`, '/creator', {
     quoted: m,
     contextInfo: {
         externalAdReply: {
@@ -179,9 +179,11 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
-///Siapa dulu dong Rizky
+///Siapa dulu dong Bang rlp:v
 
 const tombol = [
 {buttonId: '/menu', buttonText: {displayText: 'Menu'}, type: 1},
 {buttonId: '/donasi', buttonText: {displayText: 'Donasi'}, type: 1}
 ]
+
+
