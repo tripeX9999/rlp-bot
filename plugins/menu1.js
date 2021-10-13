@@ -28,9 +28,9 @@ const defaultMenu = {
 ┏ ┅ ━〔 NOTE 〕┅ ━
 ┃ ❖ *DATA KAMU TIDAK AKAN* 
 ┃ *TERSIMPAN DI DATABASE BOT*
-┃ ❖ *JIKA INGIN SEWA BOT* 
-┃ *DONASI TEKAN ATAU*
-┃ *TOMBOL PEMILIK BOT*
+┃ ❖ *JADI GUNAKAN BOT*
+┃  *DENGAN DENGAN BIJAK*
+┃  *MELANGGAR ? BLOK🗿!*
 ┗ ┅ ━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 %readmore`.trimStart(),
   header: '┏ ┅ ━〔 %category 〕',
