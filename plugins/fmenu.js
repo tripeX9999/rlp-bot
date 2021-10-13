@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let pp = await conn.getProfilePicture(conn.user.jid)
     /// sosial media\\
     let gith = 'https://github.com/Laksmana27'
-let fbe = 'https://www.facebook.com/profile.php?id=100064516381260'
+let fbe = 'https://www.facebook.com/@Laksmana027'
 let Txh = `━━┅⑈𝒯𝒽𝒶𝓃𝓀𝓈 ℱℴ𝓇⑈┅━━\n⊙Nurutomo,\n⊙Arrifb,\n⊙۩๖ۣۜℜLƤ27,\n⊙Laksmana27\n⊙Penyedia apikey\n⊙ All creator Bot\n┅━━⊙━━┅`
 //
 let tags = {
@@ -110,7 +110,7 @@ let totalprem = Object.keys(global.prems).length
 
 const tombol = [
 {buttonId: '/menu', buttonText: {displayText: 'Menu'}, type: 1},
-{buttonId: '/config', buttonText: {displayText: 'Config Inter..'}, type: 1}
+{buttonId: '/donasi', buttonText: {displayText: 'Donasi'}, type: 1}
 ]
 //******************************\\
         
@@ -121,7 +121,7 @@ Im ${me}
 _*📌My Sosmed*_
 *📎 Facebook:* ${fbe}
 *📎Github:* ${gith}
-*📎Youtube:* https://youtube.com/c/RLP27🅥
+*📎Youtube:* https://www.youtube.com/channel/UCKeulS1PHe2X-Asof2gXGqw
 
 _*⛩️LIST FEATURE⛩️*_
 🔖 .dare
