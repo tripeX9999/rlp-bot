@@ -10,7 +10,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
         conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakanime[id][0])
         throw false
     }
-    let res = await fetch('http://zekais-api.herokuapp.com/tebakanime')
+    let res = await fetch('http://zekais-api.herokuapp.com/tebakanime?apikey=hDB9tjcs')
     if (res.status !== 200) throw await res.text()
     let json = await res.json()
     if (!json.status) throw json
