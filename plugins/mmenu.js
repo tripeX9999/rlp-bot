@@ -14,10 +14,10 @@ let handler = async (m, { conn, usedPrefix }) => {
     let me = conn.user.name
     let pp = await conn.getProfilePicture(conn.user.jid)
     /// sosial media\\
-    let gith = 'https://github.com/Rizxyu'
-let fbe = 'https://www.facebook.com/profile.php?id=100064516381260'
+    let gith = 'https://github.com/Laksman27'
+let fbe = 'https://www.facebook.com/@Laksmana027'
 //************PEMBATAS************\\
-let urlyyt = ['https://youtu.be/shw7xIzGX5o','https://youtu.be/aKtb7Y3qOck','https://youtu.be/yJg-Y5byMMw','https://youtu.be/3nQNiWdeH2Q']
+let urlyyt = ['https://youtube.com/channel/UCKeulS1PHe2X-Asof2gXGqw']
 let urlyt = urlyyt[Math.floor(Math.random() * urlyyt.length)]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 avtar = await conn.getProfilePicture(conn.user.jid)
@@ -86,7 +86,7 @@ Sekarang Jam
 _*📌My Sosmed*_
 *📎 Facebook:* ${fbe}
 *📎Github:* ${gith}
-*📎Youtube:* https://youtube.com/c/Rizxyu🅥
+*📎Youtube:* https://youtube.com/c/RLP27🅥
 
 _*⛩️LIST FEATURE⛩️*_
 🔖 Aattp <teks>
