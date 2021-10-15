@@ -244,107 +244,107 @@ if (teks == 'randomimage') tags = {
               "rows": [
                 {
                   "title": `Semua Perintah`,
-                  "description": "",
+                  "description": "*_Untuk Membuka Semua menu_*",
                   "rowId": ".? all"
                 }, {
                   "title": "Game",
-                  "description": "",
+                  "description": "*_Untuk Membuka menu game_*",
                   "rowId": ".? game"
                }, {
                   "title": "Rpg",
-                  "description": "",
+                  "description": "*_Membangun Pertanian*_",
                   "rowId": ".? rpg"
                   }, {
                   "title": "Kingdom",
-                  "description": "",
+                  "description": "*_Membangun kerajaan_*",
                   "rowId": ".? kingdom"
                 }, {
                   "title": "XP",
-                  "description": "",
+                  "description": "*_Untuk Menambahkan Level Mu di bot_*",
                   "rowId": ".? xp"
                }, {
                   "title": "photooxy",
-                  "description": "",
+                  "description": "*_Untuk membikin Teks Ber-Gambar_*",
                   "rowId": ".? photooxy"
                 }, {
                   "title": "Stiker",
-                  "description": "",
+                  "description": "*_Untuk Mem-Bikin sticker WhatsApp_*",
                   "rowId": ".? stiker"
                 }, {
                   "title": "Kerang Ajaib",
-                  "description": "",
+                  "description": "*_Apakah Kamu ada pertanyaan? tanyakan kpd saya:v_*",
                   "rowId": ".? kerangajaib"
                 }, {
                   "title": "Quotes",
-                  "description": "",
+                  "description": "*_Kata-Kata Bulshit🗿_*",
                   "rowId": ".? quotes"
                 }, {
                   "title": "Admin",
-                  "description": "",
+                  "description": "*_Menu untuk admin grup_*",
                   "rowId": ".? admin"
                 }, {
                   "title": "Grup",
-                  "description": "",
+                  "description": "*_Menu untuk anggota grup_*",
                   "rowId": ".? grup"
                 }, {
                   "title": "Premium",
-                  "description": "",
+                  "description": "*_Menu untuk pengguna premium_*",
                   "rowId": ".? premium"
                 }, {
                   "title": "Internet",
-                  "description": "",
+                  "description": "*_Kamu nyari sesuatu? Klik saya:v_*",
                   "rowId": ".? internet"
                 }, {
                   "title": "Anonymous",
-                  "description": "",
+                  "description": "*_Untuk chatan ,tapi tanpa identitas_*",
                   "rowId": ".? anonymous"
                 }, {
                   "title": "Nulis & Logo",
-                  "description": "",
+                  "description": "*_Pembuat logo& tugas otomatis_*",
                   "rowId": ".? nulis"
                 }, {
                   "title": "Downloader",
-                  "description": "",
+                  "description": "*_Menu download semua sosmed_*",
                   "rowId": ".? downloader"
                 }, {
                   "title": "Tools",
-                  "description": "",
+                  "description": "*_Perintah Tersembunyi bot_*",
                   "rowId": ".? tools"
                 }, {
                   "title": "Fun",
-                  "description": "",
+                  "description": "*_Fitur kesenangan ☺️_*",
                   "rowId": ".? fun"
                 }, {
                   "title": "Database",
-                  "description": "",
+                  "description": "*_Mau nyimpen file? share ke saya_*",
                   "rowId": ".? database"
                 }, {
                   "title": "Vote & Absen",
-                  "description": "",
+                  "description": "*_vote luring/daring?_*",
                   "rowId": ".? vote"
                 }, {
                   "title": "Al-Qur\'an",
-                  "description": "",
+                  "description": "*أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللهِ*",
                   "rowId": ".? quran"
                 }, {
                   "title": "Pengubah Suara",
-                  "description": "",
+                  "description": "*_Mau ngubah suara apa?_*",
                   "rowId": ".? audio"
                 }, {
                   "title": "Jadi Bot",
-                  "description": "",
+                  "description": "*_Kamu mau Jadi bot?_*",
                   "rowId": ".? jadibot"
                 }, {
                   "title": "Info",
-                  "description": "",
+                  "description": "_*Info tentang bot_*",
                   "rowId": ".? info"
                 }, {
                   "title": "Tanpa Kategori",
-                  "description": "",
+                  "description": "*_menu tersembunyi_*",
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "Owner",
-                  "description": "",
+                  "description": "*_Menu khusus owner😏_*",
                   "rowId": ".? owner"
                 }
               ]
@@ -435,7 +435,7 @@ if (teks == 'randomimage') tags = {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
    //conn.send2Button(m.chat, text.trim(), `•Laksmana.27•`, `Owner`,`.owner`, `Donasi`, `.donasi`, m)
-    conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Laksmana.27', 'Pemilik Bot', '.owner', 'Config Internet', '.config', m)
+    conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Laksmana.27', 'Pemilik Bot🤖', '.owner', 'Config Internet🌐', '.config', 'Donasi😏', '.donasi',m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
