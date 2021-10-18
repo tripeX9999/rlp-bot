@@ -659,7 +659,7 @@ Klik tombol dibawah↓
                     return
                 break
         }
-        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka bot akan memblokirmu\nUnblock chat owner\nwa.me/6282328303332', MessageType.extendedText)
+        await this.sendMessage(from, 'Karna kamu melanggar aturan\n maka bot akan memblokirmu\nUnblock chat owner\nwa.me/62895372305081', MessageType.extendedText)
         await this.blockUser(from, 'add')
     }
 }
