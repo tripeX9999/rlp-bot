@@ -12,7 +12,7 @@ handler.all = async function (m) {
 Hai  ${ucapan()}
 
 ada yg bisa Saya Bantu?
-`.trim(), '۩๖ۣۜℜLƤ27', 'Menu', '#menu', 'Pemilik Bot', '#creator', m)
+`.trim(), '®Veteran-Botz', 'Menu', '#menu', 'Pemilik Bot', '#creator', m)
     user.pc = new Date * 1
 }
 
