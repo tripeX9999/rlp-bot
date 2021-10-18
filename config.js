@@ -1,8 +1,8 @@
 global.DeveloperMode = 'false' //true Or false
 global.linkGC = ['u', 'u']
-global.owner = ['62895372305081', '6285747223233'] // Owner
-global.mods = ['62895372305081', '6285783417029'] // moderator
-global.prems = ['62895372305081', '6285747223233']  //premium
+global.owner = ['6282157541481', '6285747223233'] // Owner
+global.mods = ['6282157541481', '6285783417029'] // moderator
+global.prems = ['6282157541481', '6285747223233']  //premium
 global.wait = 'Await'
 
 global.botwm = '·Laksmana.27·'//UBAH JADI NAMAMU
@@ -34,8 +34,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'That smile is painful '
-global.author = 'RLP27'
+global.packname = 'Semoga Bahagia^^ '
+global.author = 'RLP27/Hanz'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 global.multiplier = 39 // The higher, The harder levelup
